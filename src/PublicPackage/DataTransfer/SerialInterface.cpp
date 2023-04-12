@@ -1,0 +1,19 @@
+// SerialInterface.cpp: implementation of the CSerialInterface class.
+//
+//////////////////////////////////////////////////////////////////////
+#include "SerialInterface.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CSerialInterface::CSerialInterface(CThread *pThread)
+                    :CDataTransferInterface(pThread)
+{
+	m_nOnline = 0;
+}
+
+CSerialInterface::~CSerialInterface()
+{
+
+}
